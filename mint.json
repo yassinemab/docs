@@ -5,7 +5,7 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/light.svg",
   "colors": {
     "primary": "#cb35f8",
     "light": "#cb35f8",
@@ -30,41 +30,50 @@
   "navigation": [
     {
       "group": "Get Started",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "Features",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        {
+          "group": "Find candidates",
+          "icon": "users",
+          "pages": [
+            "features/find-candidates/start-a-search",
+            "features/find-candidates/candidate-overview",
+            "features/find-candidates/candidate-pipeline"
+          ]
+        },
+        {
+          "group": "Contact candidates",
+          "icon": "message-dots",
+          "pages": [
+            "features/contact-candidates/contact-options",
+            "features/contact-candidates/connect-your-linkedin",
+            "features/contact-candidates/manual-contacting",
+            "features/contact-candidates/automated-contacting"
+          ]
+        },
+        {
+          "group": "Team management",
+          "icon": "building",
+          "pages": [
+            "features/team-management/invite-team-members",
+            "features/team-management/create-and-manage-teams"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Support",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-        ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "support/report-a-bug",
+        "support/request-a-feature",
+        "support/contact-support"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "linkedin": "https://linkedin.com/company/seleqtai"
   }
 }
